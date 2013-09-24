@@ -1,0 +1,12 @@
+<%= include_gon %>
+
+<h1>Checkbox</h1>
+
+<div>
+  <%= check_box_tag(:address_check) %>
+  <%= label_tag(:address, "Shipping Address") %>
+</div>
+<div>
+  <%= label_tag(:street, "Street:") %>
+  <%= text_field_tag(:street) %>
+</div>
