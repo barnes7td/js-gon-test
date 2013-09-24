@@ -6,4 +6,8 @@ class StaticPagesController < ApplicationController
   def checkbox_jquery
     gon.address = {street: "505 Main Street"}
   end
+
+  def checkbox_coffee
+    gon.address = {street: "505 Main Street"}
+  end
 end
