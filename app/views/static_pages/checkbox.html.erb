@@ -1,0 +1,21 @@
+<%= include_gon %>
+
+<h1>Checkbox</h1>
+
+<script>
+  function addaddress() {
+     if (document.getElementById('address').checked) {
+        document.getElementById('street').value = gon.address["street"];
+      }
+  }
+
+</script>
+
+<div>
+  <%= check_box_tag(:address, "1", false, onclick: "addaddress(this)") %>
+  <%= label_tag(:address, "Shipping Address") %>
+</div>
+<div>
+  <%= label_tag(:street, "Street:") %>
+  <%= text_field_tag(:street) %>
+</div>
